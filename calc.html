@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator E3 M4</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <h2>Calculator</h2>
+      <form>
+        <input type="number" id="myNumber1" placeholder="Number 1" />
+        <br />
+        <button type="button" onclick="selectOperation('+')">+</button>
+        <button type="button" onclick="selectOperation('-')">-</button>
+        <button type="button" onclick="selectOperation('*')">x</button>
+        <button type="button" onclick="selectOperation('/')">/</button>
+        <br />
+        <input type="number" id="myNumber2" placeholder="Number 2" />
+        <br />
+        <button type="button" onclick="doEqual()">=</button>
+        <br />
+        <input type="number" id="myNumber3" readonly />
+        <br />
+        <button type="button" id="resetbutton" onclick="resetCalculator()">
+          reset
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
